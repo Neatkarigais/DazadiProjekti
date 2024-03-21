@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    char operators;
+    float integerOne, integerTwo, result;
+    printf("Kādu operatoru vēlaties izmantot aprēķinu veikšanai? (Reaģēt ar atbilstošo operatoru\n");
+    scanf("%c",&operators);
+    printf("Ievadiet skaitļus:\n");
+    scanf("%f",&integerOne);
+    scanf("%f",&integerTwo);
+    switch(operators){
+        case '+':
+            result = integerOne + integerTwo;
+            printf("Rezultāts ir : %f\n",result);
+            break;
+        case '-':
+            result = integerOne - integerTwo;
+            printf("Rezultāts ir : %f\n",result);
+            break;
+        case '*':
+            result = integerOne * integerTwo;
+            printf("Rezultāts ir : %f\n",result);
+            break;
+        case '/':
+            int result = integerOne / integerTwo;
+            printf("Dalījums ir : %f\n",result);
+            break;
+        default:
+            printf("Nesagāja!\n");
+    }
+    return 0;
+}
