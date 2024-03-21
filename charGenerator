@@ -1,8 +1,7 @@
 #include <stdio.h>
+#include <string.h>
 
 int number;
-
-char* nullSpace = "Burts:";
 
 char* pattern[25] = {"#    "," #   ","  #  ","   # ","    #","##   "," ##  ","  ## ","   ##","###  "," ### ","  ###","#### "," ####","#####","     "," # # ","#   #","# ####","#  # ","## ##","# # #","##  #","#  ##","# #  "};
 
@@ -21,11 +20,13 @@ void scanner(char input){
 }
 
 int main() {
-    char inputChar;
-    scanf("%c",&inputChar);
-    scanner(inputChar);
-    printf("%s\n\n",nullSpace);
-    for(int i=0;i<5;i++){
-        printf("%s\n",pattern[patternArray[number][i]]);
+    char inputChar[1000];
+    scanf("%s",&inputChar);
+    for(int k=0;k<strlen(inputChar);k++){
+        scanner(inputChar[k]);
+        printf("\n");
+        for(int i=0;i<5;i++){
+            printf("%s\n",pattern[patternArray[number][i]]);
+        }
     }
 }
