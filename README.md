@@ -8,4 +8,4 @@
 
 ### Algoritmi
 
-1. Vārdu printēšana, izmantojot restītes jeb _hash_ simbolu;
+1. charGenerator -- Vārdu printēšana, izmantojot restītes jeb _hash_ simbolu;
