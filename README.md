@@ -1,5 +1,7 @@
-# characterGenerator
+# Mazie C valodas projekti
 
-C code for character generator using hash symbol. In development stage.
+Šis depozitārijs satur vairākus mazos kodus un algoritmus, kuri rakstīti uz C valodas bāzes. Katram koda failam ir sava numerācija, lai varētu orientēties to atrašanā.
 
-## Working principle
+### Algoritmi
+
+1. Vārdu printēšana, izmantojot restītes jeb _hash_ simbolu;
